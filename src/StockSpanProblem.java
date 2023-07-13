@@ -14,15 +14,14 @@ public class StockSpanProblem {
             if (s.isEmpty()){
                 span[i] = span[i+1];
             } else {
-                int prevHigh = s.peek();
-                span[i] = i - prevHigh;
+                span[i] = i - s.peek();
             }
             s.push(i);
         }
     }
 
     public static void main(String[] args) {
-        int stocks [] = {100, 80, 60, 70, 60, 85, 100};
+        int stocks [] = {100, 80, 60, 100, 60, 85, 70};
         int span[] = new int[stocks.length];
         stockSpan(stocks, span);
 
