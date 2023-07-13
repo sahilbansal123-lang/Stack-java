@@ -22,9 +22,11 @@ public class StackClass {
 
     static class Stack {
         public static Node head;
+
         public static boolean isEmpty(){
             return head == null;
         }
+
         public static void push(int data){
             Node newNode = new Node(data);
             if (isEmpty()){
@@ -43,6 +45,7 @@ public class StackClass {
             head = head.next;
             return top;
         }
+
         public static int peek(){
             if (isEmpty()){
                 return 0;
