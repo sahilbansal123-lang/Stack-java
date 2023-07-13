@@ -21,13 +21,13 @@ public class StackClass {
     }
 
     static class Stack {
-        public static Node head;
+        public Node head;
 
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return head == null;
         }
 
-        public static void push(int data){
+        public void push(int data){
             Node newNode = new Node(data);
             if (isEmpty()){
                 head = newNode;
@@ -37,7 +37,7 @@ public class StackClass {
             head = newNode;
         }
 
-        public static int pop(){
+        public int pop(){
             if (isEmpty()){
                 return 0;
             }
@@ -46,7 +46,7 @@ public class StackClass {
             return top;
         }
 
-        public static int peek(){
+        public int peek(){
             if (isEmpty()){
                 return 0;
             }
