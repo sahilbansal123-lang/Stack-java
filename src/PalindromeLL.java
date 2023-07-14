@@ -24,7 +24,7 @@ class linkedList {
     static boolean isPalindrome(Node head)
     {
 
-        Node slow = head;\
+        Node slow = head;
         boolean ispalin = true;
         Stack<Integer> stack = new Stack<>();
 
