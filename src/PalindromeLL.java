@@ -28,13 +28,13 @@ class linkedList {
         boolean ispalin = true;
         Stack<Integer> stack = new Stack<>();
 
+        // Traversing and pushing data to stack
         while (slow != null) {
             stack.push(slow.data);
             slow = slow.ptr;
         }
-
+        // Operation
         while (head != null) {
-
             int i = stack.pop();
             if (head.data == i) {
                 ispalin = true;
