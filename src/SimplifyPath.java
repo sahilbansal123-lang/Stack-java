@@ -102,5 +102,3 @@ class GFG
 
 }
 
-// This code is contributed by ankush_953
-
